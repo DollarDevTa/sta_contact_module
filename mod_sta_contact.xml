@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="module" client="site" method="upgrade">
+	<name>mod_sta_contact</name>
+	<author>Joomla! Project</author>
+	<creationDate>2024-01</creationDate>
+	<copyright>(C) 2024 Open Source Tatsiana, Inc.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>dollar2901@gmail.com</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0.0</version>
+	<description>MOD_STA_CONTACT_XML_DESCRIPTION</description>
+	<namespace path="src">Joomla\Module\StaContact</namespace>
+	<files>
+		<filename module="mod_sta_contact">mod_sta_contact.php</filename>
+		<folder>forms</folder>
+		<folder>src</folder>
+		<folder>tmpl</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/mod_sta_contact.ini</language>
+		<language tag="en-GB">language/en-GB/mod_sta_contact.sys.ini</language>
+		<language tag="pl-PL">language/pl-PL/mod_sta_contact.ini</language>
+		<language tag="pl-PL">language/pl-PL/mod_sta_contact.sys.ini</language>
+	</languages>
+	
+</extension>

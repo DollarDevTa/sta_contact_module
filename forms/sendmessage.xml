@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+	<fieldset name="stacontact" label="MOD_STA_CONTACT_DEFAULT_LABEL">
+		<field
+			name="contact_name"
+			type="text"
+			label="MOD_STA_CONTACT_EMAIL_NAME_LABEL"
+			id="contact-name"
+			size="30"
+			filter="string"
+			required="true"
+			hint="MOD_STA_CONTACT_EMAIL_NAME_LABEL"
+		/>
+
+		<field
+			name="contact_email"
+			type="email"
+			label="MOD_STA_CONTACT_EMAIL_LABEL"
+			id="contact-email"
+			size="30"
+			filter="string"
+			autocomplete="email"
+			required="true"
+			hint="MOD_STA_CONTACT_EMAIL_LABEL"
+		/>
+
+		<field
+			name="contact_subject"
+			type="text"
+			label="MOD_STA_CONTACT_MESSAGE_SUBJECT_LABEL"
+			id="contact-emailmsg"
+			size="60"
+			filter="string"
+			required="true"
+			hint="MOD_STA_CONTACT_MESSAGE_SUBJECT_LABEL"
+		/>
+
+		<field
+			name="contact_message"
+			type="textarea"
+			label="MOD_STA_CONTACT_ENTER_MESSAGE_LABEL"
+			cols="20"
+			rows="5"
+			id="contact-message"
+			filter="safehtml"
+			hint="MOD_STA_CONTACT_ENTER_MESSAGE_LABEL"
+		/>
+
+		<field
+			name="contact_sta_send_mail"
+			type="hidden"
+			default="1"
+		/>
+	</fieldset>
+
+	<fieldset name="captcha">
+		<field
+			name="captcha"
+			type="captcha"
+			label="MOD_STA_CONTACT_CAPTCHA_LABEL"
+			validate="captcha"
+			required="true"
+			namespace="contact"
+		/>
+	</fieldset>
+	
+</form>
